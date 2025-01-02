@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion de Partie</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>Gestion de Partie</h1>
+        </header>
+        <main>
+            <section id="setup">
+                <input type="number" id="playerCount" placeholder="Nombre de joueurs" min="1">
+                <button id="setupGame">Lancer la partie</button>
+            </section>
+            <section id="game" class="hidden">
+                <ul id="players"></ul>
+                <button id="addPlayer">Ajouter un joueur</button>
+                <button id="startTimer">Démarrer le chronomètre</button>
+                <div id="timer" class="hidden">00:00</div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
